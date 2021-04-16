@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>
+LONG ISLAND CAFE
+</title>
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap" rel="stylesheet">
+<style>
+html{
+height:100%;
+}
+body{
+min-height:100%;
+background:url('background.png'),#222;
+background-repeat:no-repeat;
+background-position:center;
+background-attachment:fixed;
+overflow:hidden;
+}
+h1{
+font-family:'Fredoka One',cursive;
+letter-spacing:4px;
+margin-bottom:0px;
+}
+h2{
+margin-top:0px;
+}
+h2,p{
+font-family:'Arial',sans-serif;
+color:white;
+}
+.pizza{
+color:darkorange;
+}
+.pizza_name{
+cursor:default;
+font-weight:bold;
+color:darkorange;
+letter-spacing:1px;
+}
+.price{
+font-weight:bold;
+}
+.salade{
+color:forestgreen;
+}
+.salade_name{
+font-weight:bold;
+color:forestgreen;
+letter-spacing:1px;
+}
+.svgtitle{
+dominant-baseline:middle;
+text-anchor:middle;
+fill:darkorange;
+font-size:8px;
+font-family:'Fredoka One',cursive;
+}
+#svg1{
+position:fixed;
+top:0px;
+right:0px;
+}
+/* width */
+::-webkit-scrollbar {
+width:10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow:inset 0 0 5px black; 
+border-radius:5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+background:#333; 
+border-radius:5px;
+}
+#gMargherita,#gOrientale,#gRegina,#gParma,#gTexane,#gVegas,#gGotham,#gCanyon,#gFromages,#gSimon,#gJames,#gBronx,#gNordica,#gDiavola,#gMontagnarde,#gBasilico,#gTartufalla,#gVeggie,#gIsland{
+transition:1s;
+}
+</style>
+</head>
+<body>
+<h1 class="pizza">PIZZAS</h1>
+<h2>pâte à pizza artisanale</h2>
+<p>
+<span class="pizza_name" id="Margherita">Margherita:</span> sauce tomate, mozzarella, olives, origan <span class="price">12 €</span><br>
+<span class="pizza_name" id="Orientale">Orientale:</span> sauce tomate, mozzarella, merguez, poivrons, olives, origan <span class="price">15 €</span><br>
+<span class="pizza_name" id="Regina">Regina:</span> sauce tomate, mozzarella, jambon blanc, champignons, olives, origan <span class="price">15 €</span><br>
+<span class="pizza_name" id="Parma">Parma:</span> sauce tomate, mozzarella, olives, jambon de Parme, tomates séchées, roquette, origan <span class="price">15 €</span><br>
+<span class="pizza_name" id="Parma">Texane:</span> sauce tomate, mozzarella, poulet rôti, poivrons, sauce BBQ, oignons frits, origan <span class="price">15 €</span><br>
+<span class="pizza_name" id="Vegas">Las Vegas:</span> sauce tomate, mozzarella, merguez pepperoni, jambon blanc, champignons, olives <span class="price">15 €</span><br>
+<span class="pizza_name" id="Gotham">Gotham:</span> sauce tomate, mozzarella, pepperoni, origan <span class="price">15 €</span><br>
+<span class="pizza_name" id="Canyon">Grand Canyon:</span> sauce tomate, mozzarella, bacon, chèvre, miel, origan <span class="price">15 €</span><br>
+<span class="pizza_name" id="Fromages">Quatre Fromages:</span> crème, mozzarella, scamorza, gorgozonla, chèvre, origan <span class="price">15 €</span><br>
+<span class="pizza_name" id="Simon">Simon:</span> crème, mozzarella, jambon de Parme, champignons, gorgozonla, olives, roquette, origan <span class="price">15 €</span><br>
+<span class="pizza_name" id="James">Jesse James:</span> crème, mozzarella, chèvre, miel, champignons, roquette, origan <span class="price">15 €</span><br>
+<span class="pizza_name" id="Bronx">Bronx:</span> crème, mozzarella, poulet rôti, bacon, chèvre, sauce BBQ, oignons frits, origan <span class="price">15 €</span><br>
+<span class="pizza_name" id="Nordica">Nordica:</span> crème, mozzarella, saumon fumé, crème fraîche, origan, citron <span class="price">15 €</span><br>
+<span class="pizza_name" id="Diavola">Diavola:</span> sauce tomate, mozzarella, pepperoni, spianata calabrese, jalapeños, origan <span class="price">15 €</span><br>
+<span class="pizza_name" id="Montagnarde">Montagnarde:</span> crème, mozzarella, lardons, fromage à raclette, oignons, origan <span class="price">15 €</span><br>
+<span class="pizza_name" id="Basilico">Basilico:</span> sauce tomate, mozzarella, olives, basilic, jambon de Parme, parmesan, roquette, origan <span class="price">17 €</span><br>
+<span class="pizza_name" id="Tartufalla">Tartufalla:</span> crème de truffe, mozzarella, champignons, jambon de Parme, roquette, origan <span class="price">17 €</span><br>
+<span class="pizza_name" id="Veggie">Veggie:</span> sauce tomate, mozzarella, assortiment de légumes grillés, olives, burrata, roquette, origan <span class="price">17 €</span><br>
+<span class="pizza_name" id="Island">Long Island:</span> crème de truffe, mozzarella, champignons, roquette, concassé de tomates fraîches, basilic, burata <span class="price">17 €</span><br><br>
+<span class="pizza_name">Téléphone:</span> 01 57 69 28 60<br>
+</p>
+
+<!-- <h1 class="salade">SALADES</h1>
+<h2>vegetables mix-up</h2>
+<p>
+<span class="salade_name">Poulet Rôti:</span> salade mélangée, emmental, poulet rôti, poivrons, cheddar, tomates séchées, oignons frits, tomates cerise <span class="price">14 €</span><br>
+<span class="salade_name">Cheezy:</span> salade mélangée, emmental, parmesan, cheddar, pomme, graines au miel, tomates cerise, toast de chèvre au miel <span class="price">14 €</span><br>
+<span class="salade_name">César:</span> salade mélangée, emmental, filet de poulet pané, croutons, tomates cerise, œuf, parmesan <span class="price">15 €</span><br>
+<span class="salade_name">Parisienne:</span> salade mélangée, emmental, jambon blanc, champignons, olives, œuf, graines au miel, parmesan, tomates cerise <span class="price">14 €</span><br>
+<span class="salade_name">Saumon:</span> salade mélangée, saumon fumé, pomme, citron, tomates séchées, olives, graines au miel <span class="price">14 €</span><br><br>
+<span class="salade_name">Téléphone:</span> 01 57 69 28 60<br>
+</p>-->
+
+<svg id="svg1" width="500px" height="500px" viewBox="0 0 100 100">
+
+<g id="gMargherita" transform="translate(150 50)">
+<image xlink:href="pate.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="saucetomate.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="olives.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="origan.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/>
+</g>
+<text class="svgtitle" x="0" y="0">Margherita</text></g>
+
+<g id="gOrientale" transform="translate(150 50)">
+<image xlink:href="pate.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="saucetomate.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="merguez.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="poivrons.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="olives.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="origan.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/>
+</g>
+<text class="svgtitle" x="0" y="0">Orientale</text></g>
+
+<g id="gRegina" transform="translate(150 50)">
+<image xlink:href="pate.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="saucetomate.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="jambonblanc.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="champignons.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="olives.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="origan.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/>
+</g>
+<text class="svgtitle" x="0" y="0">Regina</text></g>
+
+<g id="gParma" transform="translate(150 50)">
+<image xlink:href="pate.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="saucetomate.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="olives.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="jambondeparme.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="tomatessechees.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="roquette.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="origan.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/>
+</g>
+<text class="svgtitle" x="0" y="0">Parma</text></g>
+
+</svg>
+
+
+<script>
+var Margherita=document.getElementById("Margherita");
+var Orientale=document.getElementById("Orientale");
+var Regina=document.getElementById("Regina");
+var Parma=document.getElementById("Parma");
+var Texane=document.getElementById("Texane");
+var Vegas=document.getElementById("Vegas");
+var Gotham=document.getElementById("Gotham");
+var Canyon=document.getElementById("Canyon");
+var Fromages=document.getElementById("Fromages");
+var Simon=document.getElementById("Simon");
+var James=document.getElementById("James");
+var Bronx=document.getElementById("Bronx");
+var Nordica=document.getElementById("Nordica");
+var Diavola=document.getElementById("Diavola");
+var Montagnarde=document.getElementById("Montagnarde");
+var Basilico=document.getElementById("Basilico");
+var Tartufalla=document.getElementById("Tartufalla");
+var Veggie=document.getElementById("Veggie");
+var Island=document.getElementById("Island");
+
+var gMargherita=document.getElementById("gMargherita");
+var gOrientale=document.getElementById("gOrientale");
+var gRegina=document.getElementById("gRegina");
+var gParma=document.getElementById("gParma");
+var gTexane=document.getElementById("gTexane");
+var gVegas=document.getElementById("gVegas");
+var gGotham=document.getElementById("gGotham");
+var gCanyon=document.getElementById("gCanyon");
+var gFromages=document.getElementById("gFromages");
+var gSimon=document.getElementById("gSimon");
+var gJames=document.getElementById("gJames");
+var gBronx=document.getElementById("gBronx");
+var gNordica=document.getElementById("gNordica");
+var gDiavola=document.getElementById("gDiavola");
+var gMontagnarde=document.getElementById("gMontagnarde");
+var gBasilico=document.getElementById("gBasilico");
+var gTartufalla=document.getElementById("gTartufalla");
+var gVeggie=document.getElementById("gVeggie");
+var gIsland=document.getElementById("gIsland");
+
+function marIn(){gMargherita.setAttribute("transform","translate(50 50)");}
+function marOut(){gMargherita.setAttribute("transform","translate(150 50)");}
+Margherita.addEventListener("mouseover",marIn);
+Margherita.addEventListener("mouseout",marOut);
+
+function oriIn(){gOrientale.setAttribute("transform","translate(50 50)");}
+function oriOut(){gOrientale.setAttribute("transform","translate(150 50)");}
+Orientale.addEventListener("mouseover",oriIn);
+Orientale.addEventListener("mouseout",oriOut);
+
+function regIn(){gRegina.setAttribute("transform","translate(50 50)");}
+function regOut(){gRegina.setAttribute("transform","translate(150 50)");}
+Regina.addEventListener("mouseover",regIn);
+Regina.addEventListener("mouseout",regOut);
+
+function parIn(){gParma.setAttribute("transform","translate(50 50)");}
+function parOut(){gParma.setAttribute("transform","translate(150 50)");}
+Parma.addEventListener("mouseover",parIn);
+Parma.addEventListener("mouseout",parOut);
+</script>
+</body>
+</html>
