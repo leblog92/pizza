@@ -52,16 +52,23 @@ font-weight:bold;
 color:forestgreen;
 letter-spacing:1px;
 }
-.svgtitle{
+.svgtitlered{
 dominant-baseline:middle;
 text-anchor:middle;
-fill:darkorange;
+fill:firebrick;
+font-size:8px;
+font-family:'Fredoka One',cursive;
+}
+.svgtitlewhite{
+dominant-baseline:middle;
+text-anchor:middle;
+fill:white;
 font-size:8px;
 font-family:'Fredoka One',cursive;
 }
 #svg1{
 position:fixed;
-top:0px;
+bottom:0px;
 right:0px;
 }
 /* width */
@@ -91,7 +98,7 @@ transition:1s;
 <span class="pizza_name" id="Orientale">Orientale:</span> sauce tomate, mozzarella, merguez, poivrons, olives, origan <span class="price">15 €</span><br>
 <span class="pizza_name" id="Regina">Regina:</span> sauce tomate, mozzarella, jambon blanc, champignons, olives, origan <span class="price">15 €</span><br>
 <span class="pizza_name" id="Parma">Parma:</span> sauce tomate, mozzarella, olives, jambon de Parme, tomates séchées, roquette, origan <span class="price">15 €</span><br>
-<span class="pizza_name" id="Parma">Texane:</span> sauce tomate, mozzarella, poulet rôti, poivrons, sauce BBQ, oignons frits, origan <span class="price">15 €</span><br>
+<span class="pizza_name" id="Texane">Texane:</span> sauce tomate, mozzarella, poulet rôti, poivrons, sauce BBQ, oignons frits, origan <span class="price">15 €</span><br>
 <span class="pizza_name" id="Vegas">Las Vegas:</span> sauce tomate, mozzarella, merguez pepperoni, jambon blanc, champignons, olives <span class="price">15 €</span><br>
 <span class="pizza_name" id="Gotham">Gotham:</span> sauce tomate, mozzarella, pepperoni, origan <span class="price">15 €</span><br>
 <span class="pizza_name" id="Canyon">Grand Canyon:</span> sauce tomate, mozzarella, bacon, chèvre, miel, origan <span class="price">15 €</span><br>
@@ -109,7 +116,7 @@ transition:1s;
 <span class="pizza_name">Téléphone:</span> 01 57 69 28 60<br>
 </p>
 
-<!-- <h1 class="salade">SALADES</h1>
+<!--<h1 class="salade">SALADES</h1>
 <h2>vegetables mix-up</h2>
 <p>
 <span class="salade_name">Poulet Rôti:</span> salade mélangée, emmental, poulet rôti, poivrons, cheddar, tomates séchées, oignons frits, tomates cerise <span class="price">14 €</span><br>
@@ -132,9 +139,8 @@ transition:1s;
 <image xlink:href="blank.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
 <image xlink:href="blank.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
 <image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
-<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/>
-</g>
-<text class="svgtitle" x="0" y="0">Margherita</text></g>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlewhite" x="0" y="0">Margherita</text></g>
 
 <g id="gOrientale" transform="translate(150 50)">
 <image xlink:href="pate.png" width="50" height="50" x="-25" y="-25"/><g>
@@ -146,9 +152,8 @@ transition:1s;
 <image xlink:href="origan.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
 <image xlink:href="blank.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
 <image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
-<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/>
-</g>
-<text class="svgtitle" x="0" y="0">Orientale</text></g>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlewhite" x="0" y="0">Orientale</text></g>
 
 <g id="gRegina" transform="translate(150 50)">
 <image xlink:href="pate.png" width="50" height="50" x="-25" y="-25"/><g>
@@ -160,9 +165,8 @@ transition:1s;
 <image xlink:href="origan.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
 <image xlink:href="blank.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
 <image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
-<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/>
-</g>
-<text class="svgtitle" x="0" y="0">Regina</text></g>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlewhite" x="0" y="0">Regina</text></g>
 
 <g id="gParma" transform="translate(150 50)">
 <image xlink:href="pate.png" width="50" height="50" x="-25" y="-25"/><g>
@@ -174,9 +178,21 @@ transition:1s;
 <image xlink:href="roquette.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
 <image xlink:href="origan.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
 <image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
-<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/>
-</g>
-<text class="svgtitle" x="0" y="0">Parma</text></g>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlewhite" x="0" y="0">Parma</text></g>
+
+<g id="gTexane" transform="translate(150 50)">
+<image xlink:href="pate.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="saucetomate.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="poulet.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="poivrons.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="bbq.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="roquette.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="origan.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlewhite" x="0" y="0">Texane</text></g>
 
 </svg>
 
@@ -241,6 +257,11 @@ function parIn(){gParma.setAttribute("transform","translate(50 50)");}
 function parOut(){gParma.setAttribute("transform","translate(150 50)");}
 Parma.addEventListener("mouseover",parIn);
 Parma.addEventListener("mouseout",parOut);
+
+function texIn(){gTexane.setAttribute("transform","translate(50 50)");}
+function texOut(){gTexane.setAttribute("transform","translate(150 50)");}
+Texane.addEventListener("mouseover",texIn);
+Texane.addEventListener("mouseout",texOut);
 </script>
 </body>
 </html>
