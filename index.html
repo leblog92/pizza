@@ -68,8 +68,9 @@ font-family:'Fredoka One',cursive;
 }
 #svg1{
 position:fixed;
-bottom:0px;
+top:0px;
 right:0px;
+transition:1s;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -99,11 +100,11 @@ transition:1s;
 <span class="pizza_name" id="Regina">Regina:</span> sauce tomate, mozzarella, jambon blanc, champignons, olives, origan <span class="price">15 €</span><br>
 <span class="pizza_name" id="Parma">Parma:</span> sauce tomate, mozzarella, olives, jambon de Parme, tomates séchées, roquette, origan <span class="price">15 €</span><br>
 <span class="pizza_name" id="Texane">Texane:</span> sauce tomate, mozzarella, poulet rôti, poivrons, sauce BBQ, oignons frits, origan <span class="price">15 €</span><br>
-<span class="pizza_name" id="Vegas">Las Vegas:</span> sauce tomate, mozzarella, merguez pepperoni, jambon blanc, champignons, olives <span class="price">15 €</span><br>
+<span class="pizza_name" id="Vegas">Las Vegas:</span> sauce tomate, mozzarella, merguez, pepperoni, jambon blanc, champignons, olives <span class="price">15 €</span><br>
 <span class="pizza_name" id="Gotham">Gotham:</span> sauce tomate, mozzarella, pepperoni, origan <span class="price">15 €</span><br>
 <span class="pizza_name" id="Canyon">Grand Canyon:</span> sauce tomate, mozzarella, bacon, chèvre, miel, origan <span class="price">15 €</span><br>
-<span class="pizza_name" id="Fromages">Quatre Fromages:</span> crème, mozzarella, scamorza, gorgozonla, chèvre, origan <span class="price">15 €</span><br>
-<span class="pizza_name" id="Simon">Simon:</span> crème, mozzarella, jambon de Parme, champignons, gorgozonla, olives, roquette, origan <span class="price">15 €</span><br>
+<span class="pizza_name" id="Fromages">Quatre Fromages:</span> crème, mozzarella, scamorza, gorgonzola, chèvre, origan <span class="price">15 €</span><br>
+<span class="pizza_name" id="Simon">Simon:</span> crème, mozzarella, jambon de Parme, champignons, gorgonzola, olives, roquette, origan <span class="price">15 €</span><br>
 <span class="pizza_name" id="James">Jesse James:</span> crème, mozzarella, chèvre, miel, champignons, roquette, origan <span class="price">15 €</span><br>
 <span class="pizza_name" id="Bronx">Bronx:</span> crème, mozzarella, poulet rôti, bacon, chèvre, sauce BBQ, oignons frits, origan <span class="price">15 €</span><br>
 <span class="pizza_name" id="Nordica">Nordica:</span> crème, mozzarella, saumon fumé, crème fraîche, origan, citron <span class="price">15 €</span><br>
@@ -112,20 +113,19 @@ transition:1s;
 <span class="pizza_name" id="Basilico">Basilico:</span> sauce tomate, mozzarella, olives, basilic, jambon de Parme, parmesan, roquette, origan <span class="price">17 €</span><br>
 <span class="pizza_name" id="Tartufalla">Tartufalla:</span> crème de truffe, mozzarella, champignons, jambon de Parme, roquette, origan <span class="price">17 €</span><br>
 <span class="pizza_name" id="Veggie">Veggie:</span> sauce tomate, mozzarella, assortiment de légumes grillés, olives, burrata, roquette, origan <span class="price">17 €</span><br>
-<span class="pizza_name" id="Island">Long Island:</span> crème de truffe, mozzarella, champignons, roquette, concassé de tomates fraîches, basilic, burata <span class="price">17 €</span><br><br>
-<span class="pizza_name">Téléphone:</span> 01 57 69 28 60<br>
-</p>
+<span class="pizza_name" id="Island">Long Island:</span> crème de truffe, mozzarella, champignons, roquette, concassé de tomates fraîches, basilic, burata <span class="price">17 €</span><br></p>
+<p><b>Long Island Cafe</b><br>
+2 Passage Napoléon III<br>92500 Rueil-Malmaison<br>
+<span class="pizza_name">Téléphone:</span> 01 57 69 28 60<br></p>
 
 <!--<h1 class="salade">SALADES</h1>
-<h2>vegetables mix-up</h2>
-<p>
+<h2>vegetables mix-up</h2><p>
 <span class="salade_name">Poulet Rôti:</span> salade mélangée, emmental, poulet rôti, poivrons, cheddar, tomates séchées, oignons frits, tomates cerise <span class="price">14 €</span><br>
 <span class="salade_name">Cheezy:</span> salade mélangée, emmental, parmesan, cheddar, pomme, graines au miel, tomates cerise, toast de chèvre au miel <span class="price">14 €</span><br>
 <span class="salade_name">César:</span> salade mélangée, emmental, filet de poulet pané, croutons, tomates cerise, œuf, parmesan <span class="price">15 €</span><br>
 <span class="salade_name">Parisienne:</span> salade mélangée, emmental, jambon blanc, champignons, olives, œuf, graines au miel, parmesan, tomates cerise <span class="price">14 €</span><br>
 <span class="salade_name">Saumon:</span> salade mélangée, saumon fumé, pomme, citron, tomates séchées, olives, graines au miel <span class="price">14 €</span><br><br>
-<span class="salade_name">Téléphone:</span> 01 57 69 28 60<br>
-</p>-->
+<span class="salade_name">Téléphone:</span> 01 57 69 28 60<br></p>-->
 
 <svg id="svg1" width="500px" height="500px" viewBox="0 0 100 100">
 
@@ -188,14 +188,200 @@ transition:1s;
 <image xlink:href="poulet.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
 <image xlink:href="poivrons.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
 <image xlink:href="bbq.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
-<image xlink:href="roquette.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="oignons.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
 <image xlink:href="origan.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
 <image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
 <animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
 <text class="svgtitlewhite" x="0" y="0">Texane</text></g>
 
-</svg>
+<g id="gVegas" transform="translate(150 50)">
+<image xlink:href="pate.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="saucetomate.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="merguez.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="pepperoni.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="jambonblanc.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="champignons.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="olives.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlewhite" x="0" y="0">Las Vegas</text></g>
 
+<g id="gGotham" transform="translate(150 50)">
+<image xlink:href="pate.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="saucetomate.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="pepperoni.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="origan.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlewhite" x="0" y="0">Gotham</text></g>
+
+<g id="gCanyon" transform="translate(150 50)">
+<image xlink:href="pate.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="saucetomate.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="bacon.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="chevre.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="miel.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="origan.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlewhite" x="0" y="-5">Grand</text>
+<text class="svgtitlewhite" x="0" y="5">Canyon</text></g>
+
+<g id="gFromages" transform="translate(150 50)">
+<image xlink:href="pate2.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="creme.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="scamorza.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="gorgonzola.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="chevre.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="origan.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlered" x="0" y="-5">Quatre</text>
+<text class="svgtitlered" x="0" y="5">Fromages</text></g>
+
+<g id="gSimon" transform="translate(150 50)">
+<image xlink:href="pate2.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="creme.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="jambondeparme.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="champignons.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="gorgonzola.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="olives.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="roquette.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="origan.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlered" x="0" y="0">Simon</text></g>
+
+<g id="gJames" transform="translate(150 50)">
+<image xlink:href="pate2.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="creme.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="chevre.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="miel.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="champignons.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="roquette.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="origan.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlered" x="0" y="-5">Jessie</text>
+<text class="svgtitlered" x="0" y="5">James</text></g>
+
+<g id="gBronx" transform="translate(150 50)">
+<image xlink:href="pate2.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="creme.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="poulet.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="bacon.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="chevre.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="bbq.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="oignons.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="origan.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlered" x="0" y="0">Bronx</text></g>
+
+<g id="gNordica" transform="translate(150 50)">
+<image xlink:href="pate2.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="creme.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="saumon.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="creme.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="origan.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="citron.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlered" x="0" y="0">Nordica</text></g>
+
+<g id="gDiavola" transform="translate(150 50)">
+<image xlink:href="pate.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="saucetomate.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="pepperoni.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="spianata.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="jalapenos.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="origan.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlewhite" x="0" y="0">Diavola</text></g>
+
+<g id="gMontagnarde" transform="translate(150 50)">
+<image xlink:href="pate2.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="creme.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="lardons.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="raclette.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="oignons2.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="origan.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlered" x="0" y="0" stroke-width="1" stroke="white" opacity="0.8">Montagnarde</text>
+<text class="svgtitlered" x="0" y="0">Montagnarde</text></g>
+
+<g id="gBasilico" transform="translate(150 50)">
+<image xlink:href="pate.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="saucetomate.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="olives.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="basilic.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="jambondeparme.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="parmesan.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="roquette.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="origan.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlewhite" x="0" y="0">Basilico</text></g>
+
+<g id="gTartufalla" transform="translate(150 50)">
+<image xlink:href="pate2.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="truffe.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="champignons.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="jambondeparme.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="roquette.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="origan.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlered" x="0" y="0">Tartufalla</text></g>
+
+<g id="gVeggie" transform="translate(150 50)">
+<image xlink:href="pate.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="saucetomate.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="legumes.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="olives.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="burrata.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="roquette.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="origan.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlewhite" x="0" y="0">Veggie</text></g>
+
+<g id="gIsland" transform="translate(150 50)">
+<image xlink:href="pate2.png" width="50" height="50" x="-25" y="-25"/><g>
+<image xlink:href="truffe.png" width="20" height="20" x="-10" y="-45"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 -35;0 0 -35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="mozzarella.png" width="20" height="20" x="15" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 -25;0 25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="champignons.png" width="20" height="20" x="25" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 35 0;0 35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="roquette.png" width="20" height="20" x="15" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 25 25;0 25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="concasse.png" width="20" height="20" x="-10" y="25"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 0 35;0 0 35" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="basilic.png" width="20" height="20" x="-35" y="15"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 25;0 -25 25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="burrata.png" width="20" height="20" x="-45" y="-10"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -35 0;0 -35 0" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<image xlink:href="blank.png" width="20" height="20" x="-35" y="-35"><animateTransform attributeName="transform" attributeType="xml" type="rotate" values="360 -25 -25;0 -25 -25" begin="0s" dur="6s" repeatCount="indefinite"/></image>
+<animateTransform attributeName="transform" attributeType="xml" type="rotate" values="0 0 0;360 0 0" begin="0s" dur="6s" repeatCount="indefinite"/></g>
+<text class="svgtitlered" x="0" y="0" stroke-width="1" stroke="white" opacity="0.8">Long Island</text>
+<text class="svgtitlered" x="0" y="0">Long Island</text></g>
+
+</svg>
 
 <script>
 var Margherita=document.getElementById("Margherita");
@@ -262,6 +448,77 @@ function texIn(){gTexane.setAttribute("transform","translate(50 50)");}
 function texOut(){gTexane.setAttribute("transform","translate(150 50)");}
 Texane.addEventListener("mouseover",texIn);
 Texane.addEventListener("mouseout",texOut);
+
+function lasIn(){gVegas.setAttribute("transform","translate(50 50)");}
+function lasOut(){gVegas.setAttribute("transform","translate(150 50)");}
+Vegas.addEventListener("mouseover",lasIn);
+Vegas.addEventListener("mouseout",lasOut);
+
+function gotIn(){gGotham.setAttribute("transform","translate(50 50)");}
+function gotOut(){gGotham.setAttribute("transform","translate(150 50)");}
+Gotham.addEventListener("mouseover",gotIn);
+Gotham.addEventListener("mouseout",gotOut);
+
+function canIn(){gCanyon.setAttribute("transform","translate(50 50)");}
+function canOut(){gCanyon.setAttribute("transform","translate(150 50)");}
+Canyon.addEventListener("mouseover",canIn);
+Canyon.addEventListener("mouseout",canOut);
+
+function froIn(){gFromages.setAttribute("transform","translate(50 50)");}
+function froOut(){gFromages.setAttribute("transform","translate(150 50)");}
+Fromages.addEventListener("mouseover",froIn);
+Fromages.addEventListener("mouseout",froOut);
+
+function simIn(){gSimon.setAttribute("transform","translate(50 50)");}
+function simOut(){gSimon.setAttribute("transform","translate(150 50)");}
+Simon.addEventListener("mouseover",simIn);
+Simon.addEventListener("mouseout",simOut);
+
+function jamIn(){gJames.setAttribute("transform","translate(50 50)");}
+function jamOut(){gJames.setAttribute("transform","translate(150 50)");}
+James.addEventListener("mouseover",jamIn);
+James.addEventListener("mouseout",jamOut);
+
+function broIn(){gBronx.setAttribute("transform","translate(50 50)");}
+function broOut(){gBronx.setAttribute("transform","translate(150 50)");}
+Bronx.addEventListener("mouseover",broIn);
+Bronx.addEventListener("mouseout",broOut);
+
+function norIn(){gNordica.setAttribute("transform","translate(50 50)");}
+function norOut(){gNordica.setAttribute("transform","translate(150 50)");}
+Nordica.addEventListener("mouseover",norIn);
+Nordica.addEventListener("mouseout",norOut);
+
+function diaIn(){gDiavola.setAttribute("transform","translate(50 50)");}
+function diaOut(){gDiavola.setAttribute("transform","translate(150 50)");}
+Diavola.addEventListener("mouseover",diaIn);
+Diavola.addEventListener("mouseout",diaOut);
+
+function monIn(){gMontagnarde.setAttribute("transform","translate(50 50)");}
+function monOut(){gMontagnarde.setAttribute("transform","translate(150 50)");}
+Montagnarde.addEventListener("mouseover",monIn);
+Montagnarde.addEventListener("mouseout",monOut);
+
+function basIn(){gBasilico.setAttribute("transform","translate(50 50)");}
+function basOut(){gBasilico.setAttribute("transform","translate(150 50)");}
+Basilico.addEventListener("mouseover",basIn);
+Basilico.addEventListener("mouseout",basOut);
+
+function tarIn(){gTartufalla.setAttribute("transform","translate(50 50)");}
+function tarOut(){gTartufalla.setAttribute("transform","translate(150 50)");}
+Tartufalla.addEventListener("mouseover",tarIn);
+Tartufalla.addEventListener("mouseout",tarOut);
+
+function vegIn(){gVeggie.setAttribute("transform","translate(50 50)");}
+function vegOut(){gVeggie.setAttribute("transform","translate(150 50)");}
+Veggie.addEventListener("mouseover",vegIn);
+Veggie.addEventListener("mouseout",vegOut);
+
+function lonIn(){gIsland.setAttribute("transform","translate(50 50)");}
+function lonOut(){gIsland.setAttribute("transform","translate(150 50)");}
+Island.addEventListener("mouseover",lonIn);
+Island.addEventListener("mouseout",lonOut);
+
 </script>
 </body>
 </html>
